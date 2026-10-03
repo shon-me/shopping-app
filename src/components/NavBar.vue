@@ -31,21 +31,23 @@ function handleLogout(){
                 <v-img src="/logo.png" width="10%" height="10%"></v-img>
             </router-link>
         </v-app-bar-title>
-        <v-btn to="/products" v-if="isAuthenticated">Products</v-btn>
+        <v-btn to="/" class="ma-2">Home</v-btn>
+        <v-btn to="/products" v-if="isAuthenticated" class="ma-2">Products</v-btn>
+        <v-btn to="/orders" v-if="isAuthenticated" class="ma-2">Orders</v-btn>
 
-        <v-btn icon="mdi-account" v-if="isAuthenticated" variant="tonal">{{ letter }}
+        <v-btn icon="mdi-account" v-if="isAuthenticated" variant="tonal" class="ma-2">{{ letter }}
             <v-menu activator="parent">
                 <v-list>
                     <v-list-item>
-                        <v-btn color="primary" to="/profile">Profile</v-btn>
+                        <v-btn color="primary" to="/profile" class="ma-2">Profile</v-btn>
                     </v-list-item>
                     <v-list-item>
-                        <v-btn color="primary" @click="()=> { handleLogout();}">Logout</v-btn>
+                        <v-btn color="primary" @click="()=> { handleLogout();}" class="ma-2">Logout</v-btn>
                     </v-list-item>
                 </v-list>
             </v-menu>
         </v-btn>
 
-        <v-btn to="/signup" v-else>SignUp</v-btn>
+        <v-btn to="/signup" v-else class="ma-2">SignUp</v-btn>
     </v-app-bar>
 </template>
