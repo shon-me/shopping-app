@@ -26,7 +26,7 @@
                                 <v-card-text class="font-weight-bold">Get your key chains from our large collection</v-card-text>
                                 <v-card-text class="font-weight-bold text-display-small">Starting from as low as Ksh.50</v-card-text>
                             </div>
-                            <v-btn color="secondary" class="align-start d-flex flex-column position-absolute top-1 bottom-0 right-0 left-1 ma-4" height="70" width="120">
+                            <v-btn color="secondary" class="align-start d-flex flex-column position-absolute top-1 bottom-1 right-1 left-1 ma-4" height="70" width="120">
                                 Shop now
                                 <v-icon icon="mdi-cart-outline"></v-icon>
                             </v-btn>
@@ -118,29 +118,25 @@
                 <v-img src="/images/pic9.jpg" width="100%"></v-img>
             </v-col>
             <v-col md="4" class="pa-2">
-                <v-hover v-slot="{ isHovering, props}">
-                    <v-img src="/images/medal1.jpg" height="350" width="350" v-bind="props" class="align-end text-white" cover>
-                        <v-expand-transition v-if="isHovering">
-                            <div>
-                                <h2>Awarded on 20/12/2024</h2>
-                            </div>
-                        </v-expand-transition>
-                    </v-img>
-                </v-hover>
+               <v-card height="100%" >
+                    <div algin="center">
+                        <v-card-text>
+                            Pool toys and more.
+                        </v-card-text>
+                    </div>
+                </v-card>
             </v-col>
         </v-row>
 
         <v-row>
             <v-col md="4" class="pa-2">
-                <v-hover v-slot="{ isHovering, props}">
-                    <v-img src="/images/medal2.jpg" height="350" width="350" v-bind="props" class="align-end text-black" cover>
-                        <v-expand-transition v-if="isHovering">
-                            <div>
-                                <h2>Awarded on 30/09/2025</h2>
-                            </div>
-                        </v-expand-transition>
-                    </v-img>
-                </v-hover>
+                <v-card height="100%" >
+                    <div algin="center">
+                        <v-card-text>
+                            Pool toys and more.
+                        </v-card-text>
+                    </div>
+                </v-card>
             </v-col>
             <v-col md="8" class="pa-2">
                 <v-img src="/images/pic10.jpg" width="100%"></v-img>
@@ -152,7 +148,13 @@
                 <v-img src="/images/pic11.jpg" width="100%"></v-img>
             </v-col>
             <v-col md="4" class="pa-2">
-                
+                <v-card height="100%" >
+                    <div algin="center">
+                        <v-card-text>
+                            Pool toys and more.
+                        </v-card-text>
+                    </div>
+                </v-card>
             </v-col>
         </v-row>
     </v-container>
@@ -163,7 +165,7 @@
             <v-col md="4">
                 <v-card height="300px" color="secondary" flat>
                     <v-card-title>Subscribe to our mailing list</v-card-title>
-                    <v-card-text>Get the latest new, health tips, and hospital updates deliverd to your inbox. </v-card-text>
+                    <v-card-text>Get the latest updates on offers and new products directly to your mail.</v-card-text>
                     <v-text-field v-model="inputValue" label="Email address" outlined class="ma-4">
                         <template v-slot:append-inner>
                             <v-btn color="primary">Subscribe</v-btn>
@@ -184,7 +186,7 @@
                     <v-card-text>
                         <p>
                             <v-icon icon="mdi-map-marker-radius-outline"></v-icon>
-                            Uzima Hospitals
+                            Hillton shop & go
                         </p>
                         <p>123, Main Street Madaraka, Nairobi</p>
                         <p>
@@ -193,7 +195,7 @@
                         </p>
                         <p>
                             <v-icon icon="mdi-email-outline"></v-icon>
-                            info@uzimahosptials.com
+                            info@hilltonshopngo.com
                         </p>
                     </v-card-text>
                 </v-card>
@@ -202,9 +204,7 @@
             <v-col>
                 <v-card height="300px" color="secondary" flat>
                     <v-card-title>Quick Links</v-card-title>
-                    <v-card-text>Avout us</v-card-text>
-                    <v-card-text>Clinics</v-card-text>
-                    <v-card-text>Find a Doctor</v-card-text>
+                    <v-card-text>About us</v-card-text>
                     <v-card-text>News and Events</v-card-text>
                 </v-card>
             </v-col>
